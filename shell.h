@@ -226,10 +226,10 @@ list_t *node_starts_with(list_t *, char *, char);
 ssize_t get_node_index(list_t *, list_t *);
 
 /* toem_vars.c */
-int is_chain(info_t *, char *, size_t *);
-void check_chain(info_t *, char *, size_t *, size_t, size_t);
-int replace_alias(info_t *);
-int replace_vars(info_t *);
-int replace_string(char **, char *);
+int chain_test(info_t *, char *, size_t *);
+void chain_checker(info_t *, char *, size_t *, size_t, size_t);
+int alias_replacer(info_t *);
+int vars_replacer(info_t *);
+int string_replacer(char **, char *);
 
 #endif
